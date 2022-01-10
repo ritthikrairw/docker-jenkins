@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: ${APP_NAME:?jenkins}-app
+    privileged: true
+    user: root
+    ports:
+      - ${PORT:?8080:8080}
+      - 50000:50000
+    volumes:
+      - ./app/public:/var/jenkins_home

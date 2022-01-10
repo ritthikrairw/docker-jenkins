@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-11-28 13:56:40.33 UTC</timestamp>
+  <md5sum>69a4df654dddf48840a2de68d2116f32</md5sum>
+  <fileName>Credential id=SSH - Jenkins name=root</fileName>
+  <usages>
+    <entry>
+      <string>wp-dev.ritthikrai.com</string>
+      <ranges>1-32</ranges>
+    </entry>
+    <entry>
+      <string>uat-browsewaresolution.ritthikrai.com</string>
+      <ranges>1-20</ranges>
+    </entry>
+    <entry>
+      <string>www.campsitethailand.com</string>
+      <ranges>1-30</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
