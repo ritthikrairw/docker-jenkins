@@ -1,0 +1,79 @@
+Started by user [8mha:////4HgPuEf4mfvsilbbCV2Ea6TGQ5cb36qmFvZn+/QzjxrfAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/uat-browsewaresolution.ritthikrai.com
+The recommended git tool is: NONE
+using credential SSH - Jenkins
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/uat-browsewaresolution.ritthikrai.com/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:ritthikrairw/browsewaresolution.git # timeout=10
+Fetching upstream changes from git@github.com:ritthikrairw/browsewaresolution.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_SSH to set credentials 
+ > git fetch --tags --force --progress -- git@github.com:ritthikrairw/browsewaresolution.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/v0.3.2^{commit} # timeout=10
+ > git rev-parse v0.3.2^{commit} # timeout=10
+Checking out Revision ab6ddf022b36dc3083ab15fc5dffcf50078069f5 (v0.3.2)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ab6ddf022b36dc3083ab15fc5dffcf50078069f5 # timeout=10
+Commit message: "update deploy script"
+ > git rev-list --no-walk ab6ddf022b36dc3083ab15fc5dffcf50078069f5 # timeout=10
+[uat-browsewaresolution.ritthikrai.com] $ /bin/sh -xe /tmp/jenkins17181842711896562081.sh
++ cd system
++ chmod u+x build.sh
++ ./build.sh
+start remove old package...
+remove old package success.
+current workspace directory
+/var/jenkins_home/workspace/uat-browsewaresolution.ritthikrai.com
+start build package
+SSH: Connecting from host [4fc61e7c6a5a]
+SSH: Connecting with configuration [uat-browsewaresolution.ritthikrai.com] ...
+SSH: Creating session: username [deployer], hostname [188.166.216.234], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening SFTP channel ...
+SSH: SFTP channel open
+SSH: Connecting SFTP channel ...
+SSH: Connected
+SSH: cd [/home/deployer]
+SSH: OK
+SSH: cd [/home/deployer]
+SSH: OK
+SSH: mkdir [deploy]
+SSH: OK
+SSH: cd [deploy]
+SSH: OK
+SSH: put [deploy-build.tar.gz]
+SSH: OK
+SSH: put [deploy.sh]
+SSH: OK
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [export  __USER_DIR=/home/deployer
+export  __DIR_PATH=/home/ritthikrai/domains/uat-browsewaresolution.ritthikrai.com
+export  __USER=ritthikrai
+export  __GROUP=ritthikrai
+
+cd $__USER_DIR/deploy
+sudo chmod u+x deploy.sh
+sudo ./deploy.sh
+
+unset __DIR_PATH
+unset __USER
+unset __GROUP] ...
+SSH: EXEC: connected
+cp: cannot stat '/deploy/deploy-build.tar.gz': No such file or directory
+tar (child): deploy-build.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+rm: cannot remove 'deploy-build.tar.gz': No such file or directory
+chmod: cannot operate on dangling symlink '/public_html/.htaccess'
+chmod: cannot access '/public_html/nginx.conf': No such file or directory
+chmod: cannot operate on dangling symlink '/public_html/wp-config.php'
+SSH: EXEC: completed after 1,402 ms
+SSH: Disconnecting configuration [uat-browsewaresolution.ritthikrai.com] ...
+SSH: Transferred 2 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS

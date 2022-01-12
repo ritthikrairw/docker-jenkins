@@ -1,0 +1,33 @@
+Started by user [8mha:////4HgPuEf4mfvsilbbCV2Ea6TGQ5cb36qmFvZn+/QzjxrfAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/wp-dev.ritthikrai.com
+The recommended git tool is: NONE
+using credential SSH - Jenkins
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/wp-dev.ritthikrai.com/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:ritthikrairw/docker-wordpress-starter.git # timeout=10
+Fetching upstream changes from git@github.com:ritthikrairw/docker-wordpress-starter.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_SSH to set credentials 
+ > git fetch --tags --force --progress -- git@github.com:ritthikrairw/docker-wordpress-starter.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/v0.0.1-beta^{commit} # timeout=10
+ > git rev-parse v0.0.1-beta^{commit} # timeout=10
+Checking out Revision 27f67f1e570a8df6cd743fa677f139554820f802 (v0.0.1-beta)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 27f67f1e570a8df6cd743fa677f139554820f802 # timeout=10
+Commit message: "install wordpress 5.8.2"
+ > git rev-list --no-walk 27f67f1e570a8df6cd743fa677f139554820f802 # timeout=10
+[wp-dev.ritthikrai.com] $ /bin/sh -xe /tmp/jenkins8584695822966092457.sh
++ cd system
++ chmod u+x build.sh
++ chmod u+x deploy.sh
++ ./build.sh
+tar: app/public: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+SSH: Connecting from host [9204d20726b5]
+SSH: Connecting with configuration [wp-dev.ritthikrai.com] ...
+SSH: Disconnecting configuration [wp-dev.ritthikrai.com] ...
+SSH: Transferred 1 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS

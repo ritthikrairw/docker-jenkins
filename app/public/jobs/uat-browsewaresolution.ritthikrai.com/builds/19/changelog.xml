@@ -1,0 +1,12 @@
+commit f6834a1447c154510787b5647a76c6922f72c076
+tree 5a4541a36792cddfb2abc5b868c90cf1cee46a39
+parent 0c2c7095153721d895267856714c3cb703584c65
+author Ritthikrai W <ritthikrai.rw@gmail.com> 2021-12-17 14:08:16 +0700
+committer Ritthikrai W <ritthikrai.rw@gmail.com> 2021-12-17 14:08:16 +0700
+
+    fix port type parameter
+
+
+:100644 100644 9c6d746d644f486f74aaf3579cc06d1cc5711704 0e104ec7815f615c9d26e56775683a9cdd9b5067 M	app/public/wp-content/themes/generatepress_child/style.css
+:100644 100644 38abc5de24c4dfd02a534c950a5a9dd4b085552a fdc8d2c872c2c2ef9381dee0db304bd81ac7844d M	app/public/wp-content/themes/generatepress_child/template-parts/portfolio-fillter.php
+:100644 100644 7e86dfbff01ad23ffb00f3b885875e8339491df3 5156924f729062f40163e5c5704a9dda60fb9b6e M	app/public/wp-content/themes/generatepress_child/template-parts/portfolio-item.php

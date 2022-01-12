@@ -1,0 +1,14 @@
+Started on Dec 16, 2021, 6:09:59 PM
+Started by event from 140.82.115.88 ⇒ https://ddda-49-49-2-204.ap.ngrok.io:8080/github-webhook/ on Thu Dec 16 18:09:59 UTC 2021
+Using strategy: Default
+[poll] Last Built Revision: Revision 94588f255aa337865ecfe7008db105ff78be8ad4 (v0.4.0)
+The recommended git tool is: NONE
+using credential SSH - Jenkins
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_SSH to set credentials 
+ > git ls-remote -h -- git@github.com:ritthikrairw/browsewaresolution.git # timeout=10
+Found 1 remote heads on git@github.com:ritthikrairw/browsewaresolution.git
+[poll] Latest remote head revision on refs/heads/master is: 7d8673c01b571fa280ef7af594908eca7b5f719f
+Done. Took 3.3 sec
+Changes found

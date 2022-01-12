@@ -1,0 +1,29 @@
+Started by user [8mha:////4HgPuEf4mfvsilbbCV2Ea6TGQ5cb36qmFvZn+/QzjxrfAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/wp-dev.ritthikrai.com
+The recommended git tool is: NONE
+using credential SSH - Jenkins
+Cloning the remote Git repository
+Cloning repository git@github.com:ritthikrairw/docker-wordpress-starter.git
+ > git init /var/jenkins_home/workspace/wp-dev.ritthikrai.com # timeout=10
+Fetching upstream changes from git@github.com:ritthikrairw/docker-wordpress-starter.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_SSH to set credentials 
+ > git fetch --tags --force --progress -- git@github.com:ritthikrairw/docker-wordpress-starter.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:ritthikrairw/docker-wordpress-starter.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse origin/v0.0.1-beta^{commit} # timeout=10
+ > git rev-parse v0.0.1-beta^{commit} # timeout=10
+Checking out Revision 27f67f1e570a8df6cd743fa677f139554820f802 (v0.0.1-beta)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 27f67f1e570a8df6cd743fa677f139554820f802 # timeout=10
+Commit message: "install wordpress 5.8.2"
+First time build. Skipping changelog.
+[wp-dev.ritthikrai.com] $ /bin/sh -xe /tmp/jenkins582767336478455225.sh
++ cd system
++ ./build.sh
+/tmp/jenkins582767336478455225.sh: 3: ./build.sh: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
