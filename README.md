@@ -7,6 +7,10 @@ Backup volume
 
 ### Restore container volume
 
+Remove container
+
+`docker rm -f <CONTAINER ID OR NAME>`
+
 Remove volume
 
 `docker volume rm <VOLUME ID OR NAME>`
@@ -18,3 +22,7 @@ Create a new volume
 Copy backup data to a new volume
 
 `docker run --rm -v <VOLUME ID OR NAME>:/var/jenkins_home -v $(pwd):/backup busybox sh -c "cd /var/jenkins_home && tar -zxvf /backup/backup.tar.gz"`
+
+Re-create container
+
+`docker compose up -d`
